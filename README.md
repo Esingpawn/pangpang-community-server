@@ -54,3 +54,25 @@ pm2 startup
 
 打开 lueprints.html 查看社区建筑档案。两张预设蓝图卡片支持一键复制分享码，后续可接入真实蓝图文件、上传与审核接口。
 
+
+## 查看网站提交
+
+启动服务后打开：
+
+```text
+http://服务器IP:8765/admin.html
+```
+
+部署前必须设置 `ADMIN_TOKEN`：
+
+```bash
+ADMIN_TOKEN="你的长随机令牌" npm start
+```
+
+Docker Compose 中可在 `environment` 增加：
+
+```yaml
+ADMIN_TOKEN: "你的长随机令牌"
+```
+
+管理台支持查看招募、举报、建议，按状态筛选，修改为处理中/已完成/已归档以及删除记录。管理接口使用 Bearer Token，不要把令牌写入前端代码或提交到 GitHub。
