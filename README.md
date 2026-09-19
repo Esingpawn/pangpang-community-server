@@ -49,3 +49,8 @@ pm2 startup
 - `POST /api/submissions` 招募、举报、建议提交
 
 当前提交数据写入 `data/submissions.json`。正式运营时建议迁移到 SQLite/MySQL，并增加后台鉴权、限流、备份与审核后台。
+
+## 蓝图库
+
+打开 lueprints.html 查看社区建筑档案。两张预设蓝图卡片支持一键复制分享码，后续可接入真实蓝图文件、上传与审核接口。
+
