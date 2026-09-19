@@ -1,0 +1,10 @@
+{
+  "name": "pangpang-community-server",
+  "version": "1.0.0",
+  "private": true,
+  "description": "失控进化·胖胖社区服官网与社区服务端",
+  "main": "server.js",
+  "scripts": {"start":"node server.js","dev":"node --watch server.js"},
+  "engines": {"node": ">=18"},
+  "dependencies": {"express":"^4.21.2","helmet":"^8.0.0","morgan":"^1.10.0"}
+}
