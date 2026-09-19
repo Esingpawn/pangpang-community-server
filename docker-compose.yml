@@ -1,0 +1,14 @@
+services:
+  pangpang-web:
+    build: .
+    container_name: pangpang-community
+    restart: unless-stopped
+    ports:
+      - "8765:8765"
+    environment:
+      NODE_ENV: production
+      PORT: 8765
+    volumes:
+      - pangpang-data:/app/data
+volumes:
+  pangpang-data:
