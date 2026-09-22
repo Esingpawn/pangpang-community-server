@@ -7,7 +7,8 @@ services:
       - "8765:8765"
     environment:
       NODE_ENV: production
-      PORT: 8765`n      ADMIN_TOKEN: ${ADMIN_TOKEN}
+      PORT: 8765
+      ADMIN_TOKEN: ${ADMIN_TOKEN}
     volumes:
       - pangpang-data:/app/data
 volumes:
